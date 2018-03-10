@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layoutSuccessHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_gravity="start"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_gravity="start"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+    <LinearLayout
+        android:id="@+id/layoutSuccessMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="5">
+        <LinearLayout
+            android:id="@+id/layoutSuccessMenuInner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+            <Button
+                android:id="@+id/menuOption1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tea"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/menuOption2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Smoothies"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutSuccessMenuInner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+            <Button
+                android:id="@+id/menuOption3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Warm"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/menuOption4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Misc"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:id="@+id/layoutSuccessFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This here is a footer"/>
+    </LinearLayout>
+
+
+</LinearLayout>

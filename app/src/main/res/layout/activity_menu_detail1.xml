@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--<Button-->
+            <!--android:id="@+id/Detailed_back"-->
+            <!--android:text="Back"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorPrimary"/>-->
+        <TextView
+            style="@style/Text.Primary"
+            android:id="@+id/text_detail_activity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            tools:text="Name of Menu Item"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/Text.Secondary"
+        android:id="@+id/text_detail_activity_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customize your tea below"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="7"
+        android:background="@drawable/border">
+
+
+        <LinearLayout
+            android:id="@+id/detailedMenuLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/detailed_tea_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                tools:text="Fruit/Milk Tea"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+                <RadioButton
+                    android:id="@+id/rbmilkTea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Milk"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:paddingRight="24dp"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/rbfruitTea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fruit "
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"/>
+            </RadioGroup>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/detailed_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingBottom="8dp"
+                tools:text="Size"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+                <RadioButton
+                    android:id="@+id/sizeReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regular"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/sizeLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"/>
+            </RadioGroup>
+            <!--<TextView-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/detailed_toppings"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="16dp"-->
+                <!--tools:text="Toppings"/>-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Add Tapioca \t\t $0.50"-->
+                <!--style="?android:borderlessButtonStyle"/>-->
+            <!--<TextView-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--&lt;!&ndash;<CheckBox&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Fruit Freeze \t\t $1.00"/>&ndash;&gt;-->
+            <!--<Button-->
+                <!--android:id="@+id/btnJelly"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Add Jelly \t\t\t\t $0.75"-->
+                <!--style="?android:borderlessButtonStyle"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/JellySelected"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=""-->
+                <!--android:maxLines="3"-->
+                <!--android:ellipsize="end"-->
+                <!--android:textStyle="italic"-->
+                <!--android:paddingLeft="15dp"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btnBoba"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Add Boba \t\t\t\t $0.75"-->
+                <!--style="?android:borderlessButtonStyle"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/BobaSelected"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=""-->
+                <!--android:maxLines="3"-->
+                <!--android:ellipsize="end"-->
+                <!--android:textStyle="italic"-->
+                <!--android:paddingLeft="15dp"/>-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/detailed_toppings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                tools:text="Toppings"/>
+            <Button
+                android:id="@+id/btnJelly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Jelly \t\t\t\t $0.75"
+                style="?android:borderlessButtonStyle"
+                />
+            <TextView
+                android:id="@+id/JellySelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLines="4"
+                android:textStyle="italic"
+                android:paddingLeft="15dp"/>
+            <Button
+                android:id="@+id/btnBoba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Boba \t\t\t\t $0.75"
+                style="?android:borderlessButtonStyle"/>
+            <TextView
+                android:id="@+id/BobaSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLines="4"
+                android:textStyle="italic"
+                android:paddingLeft="15dp"/>
+            <CheckBox
+                android:id="@+id/checkboxTapioca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Tapioca \t $0.50"/>
+            </LinearLayout>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="1">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:text="Your Order:"-->
+            <!--android:textStyle="bold"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Fractivity_tea Tea\nRegular\nTapioca\nRainbow Jelly\nBoba"/>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_weight="2"
+        android:paddingTop="15dp">
+
+        <Button
+            android:id="@+id/btnAddToOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add To Order"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/btnCheckOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Out"/>
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/menuLeftSide"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/detailed_size"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<CheckBox-->
+            <!--style="@style/Text.Secondary"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="small"/>-->
+        <!--<CheckBox-->
+            <!--style="@style/Text.Secondary"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="large"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_below="@id/text_detail_activity_description"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@android:color/darker_gray"/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_gravity="center">-->
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="ADD"-->
+            <!--android:layout_marginRight="30dp"/>-->
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:text="Check Out"/>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>
+

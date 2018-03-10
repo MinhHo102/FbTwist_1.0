@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">FbTwist</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="disclaimer">We don\'t post anything to Facebook. By signing in, you agree to our Terms of Service and Privacy Policy</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_phone">Phone Number</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="FACEBOOK_APP_ID">932715270210199</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">e301f44a12343afdab729a6292a1d4eb</string>
+
+    // if your Facebook App ID is 1234567, you should use ak1234567
+    <string name="ak_login_protocol_scheme">ak932715270210199</string>
+
+    <!-- Strings related to Menu Ordering-->
+    <string-array name="typesOfJelly">
+        <item>Rainbow Jelly</item>
+        <item>Green Apple</item>
+        <item>Strawberry</item>
+        <item>Lychee</item>
+        <item>Coffee</item>
+        <item>Star Mango</item>
+        <item>Passion</item>
+        <item>Aloe Vera</item>
+    </string-array>
+    <string-array name="typesOfBoba">
+        <item>Green Apple</item>
+        <item>Mango</item>
+        <item>Strawberry</item>
+        <item>Lychee</item>
+    </string-array>
+
+    <string name="jellyPositive">Add</string>
+    <string name="cancel">Dismiss</string>
+    <string name="neutral">Clear All</string>
+    <string name="boba">List Of Boba</string>
+    <string name="jelly">List Of Jelly</string>
+    <string name="category_tea">Tea</string>
+
+
+</resources>
