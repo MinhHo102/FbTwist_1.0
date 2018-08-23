@@ -1,0 +1,95 @@
+MYSQL Create Tables
+XSmoothie
+CREATE TABLE XSmoothie (id int NOT NULL AUTO_INCREMENT,
+name varchar(100) NOT NULL, description varchar(256) NOT NULL, PRIMARY KEY(id));
+
+INSERT INTO XSmoothie(name, description) VALUES
+("Tropicana Colada", "Pineapple, banana, coco milk"),
+("Honey Lovers", "Honeydew, peach with honeydew bites"),
+("Island Blast", "Mango, pineapple, strawberry with pineapple bites"),
+("Peachy Fantasy", "Peach, mango, strawberry"),
+("Summer Fun", "Lychee, papaya with mix jelly"),
+("Paradise Freeze", "Kiwi, strawberry, mango with mango jelly"),
+("Lychee Sensation", "Lychee, mango, coconut"),
+("Jackfruit Shaker", "Jackfruit, lychee, condensed milk"),
+("Avocado Craze", "A whole avocado, milk with condensed milk"),
+("Purple Pleasure", "Taro, coconut, milk with condensed milk"),
+("Too berry", "Strawberry, blueberry, raspberry with strawberry bites"),
+("Peach Berry Twizzle", "Strawberry, peach with strawberry bopper"),
+("Mango Madness", "Mango with chamoy and raspberry swirl"),
+("Watermelon Splash", "Watermelon, pineapple, strawberry"),
+("Strawberry Breeze", "Strawberry, coconut milk with coconut flake"),
+("Power Shake", "Banana, peanut butter, chocolate syrup"),
+("Strawberry Sunrise", "strawberry, banana, pineapple"),
+("JsMoola Mix", "Chocolate yogurt, granola, nuts, peanut butter, top with granola, nuts, and s’mores"),
+("OoLaLa Create Your Own!", "Pick up to 3 fruits");
+
+Regular Smoothie
+Smoothie
+CREATE TABLE Smoothie (id int NOT NULL AUTO_INCREMENT,
+name varchar(100) NOT NULL, description varchar(256), PRIMARY KEY(id));
+Should description be not null?
+
+INSERT INTO Smoothie (name, description) VALUES
+("Banana", "plátano"),
+("Cantaloupe", "melón"),
+("Coconut", "coco"),
+("Green Tea", "té verde"),
+("Guava (Seasonal)", "guayaba"),
+("Honeydew", "melón verde"),
+("Jackfruit", ""),
+("Lychee", ""),
+("Mango", ""),
+("Papaya", ""),
+("Peach", ""),
+("Pineapple", ""),
+("Strawberry", ""),
+("Soursop", "guanábana"),
+("Taro", ""),
+("Watermelon", ""),
+("Peach-Mango", ""),
+("Strawberry-Banana", ""),
+("Strawberry-Kiwi", ""),
+("Red Bean Coco Milk", "");
+
+Tea
+CREATE TABLE Tea(id int NOT NULL AUTO_INCREMENT,
+name varchar(100), description varchar(256), PRIMARY KEY(id));
+
+INSERT INTO Tea(name, description) VALUES
+("Peach", ""),
+("Chocolate", ""),
+("Taro", ""),
+("Mango", ""),
+("Coconut", ""),
+("Vanilla", ""),
+("Pomegranate", ""),
+("Kumquat", ""),
+("Honey", ""),
+("Logan", ""),
+("Banana", ""),
+("Orange", ""),
+("Blueberry", ""),
+("Grapefruit", ""),
+("Yogurt", ""),
+("Watermelon", ""),
+("Ginger", ""),
+("Thai", ""),
+("Lychee", ""),
+("Green Bean", ""),
+("Red Bean", ""),
+("Lemon", ""),
+("Pineapple", ""),
+("Passion Fruit", ""),
+("Kiwi", ""),
+("Strawberry", ""),
+("Guava", ""),
+("Green Apple", ""),
+("Grape", ""),
+("Honeydew", "");
+
+ordersPost
+CREATE TABLE ordersPost(id int NOT NULL AUTO_INCREMENT,
+userid varchar(50), type varchar(20), name varchar(256), teatype varchar(10), smoothietype varchar(10),
+boba varchar(256), jelly varchar(256), size varchar(10), tapioca tinyint(1) default 0,
+protein tinyint(1) default 0, date datetime, PRIMARY KEY(id));
